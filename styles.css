@@ -17,19 +17,13 @@ p {
     margin: 12px 0;
 }
 
-/* ********* custom classes ************* */
-.w-10 {
-    width: 100%;
-}
-.w-8 {
-    width: 80%;
-}
 /* ********* header ************* */
 header {
     width: 100%;
     background: rgb(1, 25, 134);
     color: #fff;
     padding: 12px 0;
+    opacity: 8;
 }
 
 .logo-wrapper {
@@ -79,7 +73,7 @@ header {
 .btn-primary {
     width: 20%;
     padding: 12px;
-    margin-top: 10px;
+    margin: 0 auto;
     color: #fff;
     background: orangered;
     font-weight: bold;
@@ -96,14 +90,19 @@ header {
 /* ******** intro ********* */
 .intro {
     width: 80%;
-    margin: 3rem auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 18px;
 }
+.intro p {
+    line-height: 1.7;
+}
+.spacing {
+    margin: 3rem auto;
+}
 .text-container {
-    width: 40%;
+    width: 50%;
 }
 .image-container {
     width: 60%;
@@ -111,6 +110,7 @@ header {
 
 /* ******** Why JTB ********* */
 .why-jtb {
+    width: 100%;
     color: #fff;
     padding: 20px 0;
     background-image: linear-gradient(
@@ -121,17 +121,62 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.why-jtb-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
 }
 .why-jtb img {
     border-radius: 8px;
 }
-.why-jtb ul li {
+ul li {
     margin: 10px 0;
     line-height: 1.7;
+    list-style: inside;
+}
+
+/* ******** Why JTB ********* */
+
+.how-it-works {
+    width: 100%;
+    margin: 3rem auto;
+}
+.how-it-works-cont {
+    width: 100%;
+    padding: 20px 0;
+}
+
+ol li {
+    margin: 10px 0;
+    line-height: 1.7;
+    list-style: inside;
+    list-style-type: decimal;
+}
+
+/* ******** Why JTB ********* */
+
+.why-choose-us {
+    width: 100%;
+    margin: 3rem 0;
+}
+.why-choose-us-cont {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0;
 }
 
 /* ******** MEDIA QUERY ********* */
 @media (max-width: 750px) {
+    p,
+    li {
+        font-size: 16px;
+    }
     .logo-wrapper {
         width: 90%;
     }
@@ -144,21 +189,47 @@ header {
     .btn-primary {
         width: 60%;
     }
-    .intro {
+    .intro,
+    .why-jtb-container {
         width: 90%;
         flex-direction: column;
         gap: 2rem;
     }
-    .intro img,
+    .intro {
+        padding: 0 20px;
+    }
+    .intro,
+    img,
+    p,
+    .why-jtb-container img,
     p {
         width: 100%;
     }
 
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .text-container,
     .image-container {
         width: 100%;
     }
+
+    .why-choose-us-cont,
+    .how-it-works {
+        width: 90%;
+    }
 }
-li {
-    list-style-position: inside;
+
+/* ********* custom classes ************* */
+.w-10 {
+    width: 100%;
+}
+.w-8 {
+    width: 80%;
+}
+
+.bg-grey {
+    background: #e6e4e4;
 }
