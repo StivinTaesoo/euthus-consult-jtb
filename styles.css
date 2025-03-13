@@ -13,7 +13,16 @@ a {
     color: #fff;
 }
 p {
-    line-height: 1.7;
+    line-height: 1.6;
+    margin: 12px 0;
+}
+
+/* ********* custom classes ************* */
+.w-10 {
+    width: 100%;
+}
+.w-8 {
+    width: 80%;
 }
 /* ********* header ************* */
 header {
@@ -91,6 +100,34 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 18px;
+}
+.text-container {
+    width: 40%;
+}
+.image-container {
+    width: 60%;
+}
+
+/* ******** Why JTB ********* */
+.why-jtb {
+    color: #fff;
+    padding: 20px 0;
+    background-image: linear-gradient(
+            rgba(9, 2, 110, 0.6),
+            rgba(9, 2, 110, 0.5)
+        ),
+        url("./images/image-8.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.why-jtb img {
+    border-radius: 8px;
+}
+.why-jtb ul li {
+    margin: 10px 0;
+    line-height: 1.7;
 }
 
 /* ******** MEDIA QUERY ********* */
@@ -110,5 +147,18 @@ header {
     .intro {
         width: 90%;
         flex-direction: column;
+        gap: 2rem;
     }
+    .intro img,
+    p {
+        width: 100%;
+    }
+
+    .text-container,
+    .image-container {
+        width: 100%;
+    }
+}
+li {
+    list-style-position: inside;
 }
