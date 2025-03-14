@@ -159,7 +159,7 @@ ol li {
     list-style-type: decimal;
 }
 
-/* ******** Why JTB ********* */
+/* ******** Why Choose Us ********* */
 
 .why-choose-us {
     width: 100%;
@@ -201,7 +201,6 @@ ol li {
     display: flex;
     gap: 10px;
     padding: 6px;
-    /* grid-template-columns: auto auto auto; */
     flex: none;
 }
 
@@ -242,7 +241,49 @@ ol li {
 
 .prev:hover,
 .next:hover {
-    background: rgb(255, 94, 0);
+    background: rgb(209, 227, 248);
+}
+
+/* ******** faqs ********* */
+.faqs {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 2rem 0;
+}
+.faqs-container {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.faqs h1 {
+    margin-bottom: 16px;
+}
+
+.faq {
+    margin-bottom: 20px;
+}
+
+.question {
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.answer {
+    display: none;
+    /* margin-top: 10px; */
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.answer.show {
+    display: block;
 }
 
 /* ******** MEDIA QUERY ********* */
@@ -311,6 +352,10 @@ ol li {
     .scroll_items-container div img {
         width: 100%;
     }
+
+    .faqs-container {
+        width: 90%;
+    }
 }
 
 /* ********* custom classes ************* */
@@ -322,5 +367,5 @@ ol li {
 }
 
 .bg-grey {
-    background: #e6e4e4;
+    background-color: #f9f9f9;
 }
